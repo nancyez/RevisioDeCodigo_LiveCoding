@@ -1,0 +1,63 @@
+Nancy Pérez entrevistado por Osvaldo Morales 3 de 5 porque no termine los rerimientos. 
+
+package livingCoding;
+
+import java.util.Scanner;
+
+public class Fruits {
+		
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Escribe el número de mangos");
+		int mangos= scanner.nextInt();
+		
+		System.out.println("Escribe el número de naranjas");
+		int naranjas = scanner.nextInt();
+	
+	}
+	
+	public static void main(String[] args) {
+	MangoNaranjas piña = new MangoNaranjas();
+	piña.juice();	
+	}
+}
+
+
+000000000000000000000000000000000000000000000000000
+package livingCoding;
+
+public class MangosNaranjas {
+	public String sweet;
+	public int weight;
+	
+	public MangosNaranjas(String sweet, int weight) {
+		super();
+		this.sweet = sweet;
+		this.weight = weight;
+	}
+	
+	public void juice() {
+		System.out.println("Exprimir");
+	}
+	
+	public String getSweet() {
+		return sweet;
+	}
+
+	public void setSweet(String sweet) {
+		this.sweet = sweet;
+	}
+
+	public int getWeight() {
+		return weight;
+	}
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+
+	@Override
+	public String toString() {
+		return "MangosNaranjas [sweet=" + sweet + ", weight=" + weight + "]";
+	}
+}
