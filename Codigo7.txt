@@ -1,0 +1,54 @@
+Nancy Pérez Reyes calificada por Osvaldo Morales 3 de 5 ya que no corrio el programa.
+
+
+package revisiónDeCodigo;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Codigo7{
+
+	public static void main(String[] args){
+		Scanner s = new Scanner(System.in);
+		
+		HashMap<String, String> capitales = new HashMap<>();
+
+	    capitales.put("Canadá", "Otawwa");
+	    capitales.put("Estados Unidos", "Washington DC");
+	    capitales.put("México", "México DF");
+	    capitales.put("Belice", "Belmopán");
+	    capitales.put("Costa rica", "San José");
+	    capitales.put("El Salvador");
+	    capitales.put("Guatemala", "Ciudad de Guatemala");
+	    capitales.put("Honduras", "Tegucigalpa");
+	    capitales.put("Nicaragua", "Managua");
+	    capitales.put("Panamá", "Panamá");
+	   
+	    String c = "";
+        do {
+            System.out.print("Escribe el nombre de un país y te diré su capital (o 'salir' para terminar): ");
+            c = s.nextLine();
+
+            if (!c.equals("salir")) {
+                if (capitales.containsKey(c)) {
+                    System.out.print("La capital de " + c + " es " + capitales.get(c));
+                } else {
+                    System.out.println("No conozco la respuesta. ¿Cuál es la capital de " + c + "?: ");
+                    String capital = s.nextLine();
+                    capitales.put(c, capital);
+                    System.out.println("Gracias por enseñarme nuevas capitales.");
+                }
+            }
+        } while (!c.equals("salir"));
+	}
+}
+
+/*1.Agregar método main
+ * 2.Importar scanner y agregar System.in y también HashMap
+ * 3.Tipo de datos recibidos son string en lugar de byte y double
+ * 4.Completar la variable de ca por capitales
+ * 5.En el do poner System.OUT.print
+ * 6.En lugar de double es s.nextline()para recibir el string
+ * 7.Poner ca por capilaes y capital
+ * */
+ */
